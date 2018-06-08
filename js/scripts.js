@@ -45,7 +45,6 @@ function makeUpToArray(highestNumber) {
 function applyFuncsToArray(highestNumber) {
   var outputArray = []
   var upToNumbersArray = makeUpToArray(highestNumber)
-  console.log("upToNumbersArray", upToNumbersArray)
   upToNumbersArray.forEach(function(number){
     var checkForZeroOrOne = hasNoZerosOrOnes(number)
     if (isDivisibleByThree(number)) {

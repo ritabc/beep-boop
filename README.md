@@ -31,10 +31,9 @@
 * This program will print an array with all the numbers leading up to a given number
   * Example Input: 5
   * Example Output: [0, 1, 2, 3, 4, 5]
-* For each number in the array, it will apply updateIfDivisibleByThree, then lookForZeroOrOne
+* For each number in the array, it will first apply isDivisibleByThree, then hasNoZerosOrOnes, and take the appropriate action as necessary
 
 * Notes:
-  * if else branching: n % 3 comes first, then else if it has a 1, then else if it has a 0, then else: ...
   * challenge: work for (-) numbers too
 
 ## Technologies Used
