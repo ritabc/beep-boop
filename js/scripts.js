@@ -67,6 +67,8 @@ function applyFuncsToArray(highestNumber, name) {
   return outputArray
 }
 
+function showGrid
+
 $(document).ready(function(){
   $("#submit").click(function(e) {
     e.preventDefault()

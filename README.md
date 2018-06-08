@@ -34,7 +34,6 @@
 * For each number in the array, it will first apply isDivisibleByThree, then hasNoZerosOrOnes, and take the appropriate action as necessary
 
 * Notes:
-  * challenge: work for (-) numbers too
   * enter a number, show the output, then enter a new number and show that output too
   * challenge: print the input number, the original array,  and the output "number"
     * additional: as columns?
