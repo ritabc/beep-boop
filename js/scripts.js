@@ -36,8 +36,15 @@ function isDivisibleByThree(number) {
 
 function makeUpToArray(highestNumber) {
   var upToArray = []
-  for (let number = 0; number <= highestNumber; ++number) {
-    upToArray.push(number)
+  // treat positive and negative numbers differently
+  if (highestNumber > 0) {
+    for (let number = 0; number <= highestNumber; ++number) {
+      upToArray.push(number)
+    }
+  } else if (highestNumber < 0) {
+    for (let number = highestNumber; number <= 0; ++number) {
+      upToArray.push(number)
+    }
   }
   return upToArray
 }
@@ -69,5 +76,8 @@ $(document).ready(function(){
     let outputArray = applyFuncsToArray(highestNumber, name)
     $(".results-space").after("<p>" + outputArray + "</p>")
     $(".results").show()
+  })
+  $("#refresh").click(function() {
+    location.reload()
   })
 })

@@ -35,7 +35,10 @@
 
 * Notes:
   * challenge: work for (-) numbers too
-  * challenge: print the input number and the output "number"
+  * enter a number, show the output, then enter a new number and show that output too
+  * challenge: print the input number, the original array,  and the output "number"
+    * additional: as columns?
+
 
 ## Technologies Used
 
