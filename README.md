@@ -1,4 +1,4 @@
-# Project Title
+# Beep Boop
 
 #### Epicodus Intro to Programming: Beep Boop, June 8th, 2018
 
@@ -18,16 +18,18 @@
 * This program will print 'Beep' when a zero is entered
   * Example Input: 0
   * Example Output: ["Beep"]
-* This program will print 'Beep' when any containing a zero is entered
-  * Example Input: 10
-  * Example Output: ["Beep"]
 * This program will print 'Boop' when a 1 is entered
   * Example Input: 1
   * Example Output: ["Boop"]
+* This program will print 'Beep' when any number containing a zero is entered
+  * Example Input: 10
+  * Example Output: ["Beep"]
 * This program will print 'Boop' when any containing a 1 is entered
   * Example Input: 14
   * Example Output: ["Beep"]
-* This program will 
+* This program will print "I'm sorry, Dave. I'm afraid I can't do that." if any number is given that is divisible by 3
+  * Example Input: 27
+  * Example Output: ["I'm sorry, Dave. I'm afraid I can't do that."]
 * This program will print an array with all the numbers leading up to a given number
   * Example Input: 5
   * Example Output: [0, 1, 2, 3, 4, 5]
@@ -49,4 +51,4 @@
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2018 **Name**
+Copyright (c) 2018 **Rita Bennett-Chew**
