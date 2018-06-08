@@ -4,6 +4,12 @@
 
 #### By Rita Bennett-Chew
 
+#### Description:
+Takes a user's name and favorite number (n) from the user and returns a range of numbers from 0 to n with the following exceptions:
+  * Any number divisible by 3 is replaced with "I'm sorry, \_entered name\_. I'm afraid I can't do that."
+  * Then any other numbers that contain a 1 are replaced with "Boop!"
+  * Then any other numbers that contain a 0 are replaced with "Beep!"
+
 ## Setup/Contribution Requirements
 
 1. Clone the repo
@@ -11,7 +17,7 @@
 1. Commit and push your changes
 1. Create a PR
 
-## Specs
+## Specifications
 
 * This program will print 'Beep' when a zero is entered
   * **Example Input:** 0

@@ -1,10 +1,10 @@
 function pushBeep(output) {
-  output.push("Beep")
+  output.push("Beep!")
   return output
 }
 
 function pushBoop(output) {
-  output.push("Boop")
+  output.push("Boop!")
   return output
 }
 
