@@ -18,26 +18,28 @@ function lookForZeroOrOne(number, output) {
   // arrayOfDigits = ["1", "4"]
   // loop and check for any O's
   for (let i = 0; i < arrayOfDigits.length; ++i) {
-    // if (parseInt(arrayOfDigits[i]) % 3 === 0) {
-    //   console.log("reached")
-    //   pushApology(output, name)
-    //   break
     if (parseInt(arrayOfDigits[i]) === 1) {
       pushBoop(output)
       break
     } else if (parseInt(arrayOfDigits[i]) === 0) {
       pushBeep(output)
       break
-    }
+    } // else if it finds neither a 1 or 0, what should it do? Nothing? Or Break out of if-statement and then return output.push(number)?
   }
   return output
 }
 
-// lookForZeroOrOne(20, [])
-
-function isDivisibleByThree(number, output, name) {
+function updateIfDivisibleByThree(number, output, name) {
   if (number % 3 === 0) {
     pushApology(output, name)
     return output
   }
+}
+
+function makeUpToArray(highestNumber) {
+  upToArray = []
+  for (let number = highestNumber; number >= 0; --number) {
+    upToArray.push(number)
+  }
+  return upToArray
 }

@@ -36,7 +36,7 @@
 
 * Notes:
   * if else branching: n % 3 comes first, then else if it has a 1, then else if it has a 0, then else: ...
-
+  * challenge: work for (-) numbers too 
 
 ## Technologies Used
 
