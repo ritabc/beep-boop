@@ -13,20 +13,15 @@ function pushApology(output, name) {
   return output
 }
 
-function lookForZeroOrOne(number, output) {
+function hasNoZerosOrOnes(number) {
   arrayOfDigits = number.toString().split("")
-  // arrayOfDigits = ["1", "4"]
-  // loop and check for any O's
   for (let i = 0; i < arrayOfDigits.length; ++i) {
     if (parseInt(arrayOfDigits[i]) === 1) {
-      pushBoop(output)
-      break
+      return 1
     } else if (parseInt(arrayOfDigits[i]) === 0) {
-      pushBeep(output)
-      break
-    } // else if it finds neither a 1 or 0, what should it do? Nothing? Or Break out of if-statement and then return output.push(number)?
-  }
-  return output
+      return 0
+    }
+  } return true
 }
 
 function updateIfDivisibleByThree(number, output, name) {
@@ -37,9 +32,17 @@ function updateIfDivisibleByThree(number, output, name) {
 }
 
 function makeUpToArray(highestNumber) {
-  upToArray = []
+  var upToArray = []
   for (let number = highestNumber; number >= 0; --number) {
     upToArray.push(number)
   }
   return upToArray
+}
+
+function applyFuncsToArray(highestNumber) {
+  var outputArray = []
+  upToNumbersArray = makeUpToArray(highestNumber)
+  upToNumbersArray.forEach(function(number){
+    return true
+  })
 }
