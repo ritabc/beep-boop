@@ -1,3 +1,12 @@
 .results {
   display: none;
 }
+
+.parent-of-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent-of-input div {
+}

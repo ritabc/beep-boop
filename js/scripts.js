@@ -67,17 +67,33 @@ function applyFuncsToArray(highestNumber, name) {
   return outputArray
 }
 
-function showGrid
+function showGridResults(highestNumber, name) {
+  // add Input to .results
+  $("div#data-input").html(highestNumber)
 
-$(document).ready(function(){
+  // add input Array to .results
+  let listOfNums = makeUpToArray(highestNumber)
+  listOfNums.forEach(function(number) {
+    $("div#data-input-array").append("<p>" + number + "</p>")
+  })
+
+  // add output list to .results
+  let listOfOutputs = applyFuncsToArray(highestNumber, name)
+  listOfOutputs.forEach(function(output) {
+    $("div#data-output").append("<p>" + output + "</p>")
+  })
+
+  // display .results
+  $(".results").show()
+}
+
+$(document).ready(function() {
   $("#submit").click(function(e) {
     e.preventDefault()
     $(".input").hide()
     let name = $("#name").val()
     let highestNumber =  parseInt($("#favorite-number").val())
-    let outputArray = applyFuncsToArray(highestNumber, name)
-    $(".results-space").after("<p>" + outputArray + "</p>")
-    $(".results").show()
+    showGridResults(highestNumber, name)
   })
   $("#refresh").click(function() {
     location.reload()
