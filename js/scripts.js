@@ -24,16 +24,19 @@ function hasNoZerosOrOnes(number) {
   } return true
 }
 
-function updateIfDivisibleByThree(number, output, name) {
-  if (number % 3 === 0) {
-    pushApology(output, name)
-    return output
+function isDivisibleByThree(number) {
+  // if number === 0 we want it to return false
+  if (number === 0) {
+    return false
+  }
+  else if (number % 3 === 0) {
+    return true
   }
 }
 
 function makeUpToArray(highestNumber) {
   var upToArray = []
-  for (let number = highestNumber; number >= 0; --number) {
+  for (let number = 0; number <= highestNumber; ++number) {
     upToArray.push(number)
   }
   return upToArray
@@ -41,8 +44,19 @@ function makeUpToArray(highestNumber) {
 
 function applyFuncsToArray(highestNumber) {
   var outputArray = []
-  upToNumbersArray = makeUpToArray(highestNumber)
+  var upToNumbersArray = makeUpToArray(highestNumber)
+  console.log("upToNumbersArray", upToNumbersArray)
   upToNumbersArray.forEach(function(number){
-    return true
+    var checkForZeroOrOne = hasNoZerosOrOnes(number)
+    if (isDivisibleByThree(number)) {
+      pushApology(outputArray, "Dave")
+    } else if (checkForZeroOrOne === 1) {
+      pushBoop(outputArray)
+    } else if (checkForZeroOrOne === 0) {
+      pushBeep(outputArray)
+    } else {
+      outputArray.push(number)
+    }
   })
+  return outputArray
 }
