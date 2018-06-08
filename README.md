@@ -33,12 +33,6 @@
   * Example Output: [0, 1, 2, 3, 4, 5]
 * For each number in the array, it will first apply isDivisibleByThree, then hasNoZerosOrOnes, and take the appropriate action as necessary
 
-* Notes:
-  * enter a number, show the output, then enter a new number and show that output too
-  * challenge: print the input number, the original array,  and the output "number"
-    * additional: as columns?
-
-
 ## Technologies Used
 
 * Bootstrap x.x.x
@@ -46,7 +40,7 @@
 
 ## Links
 
-*
+* Here is a link to [the repository](https://github.com/ritabc/beep-boop).
 
 ## License
 
