@@ -42,13 +42,13 @@ function makeUpToArray(highestNumber) {
   return upToArray
 }
 
-function applyFuncsToArray(highestNumber) {
+function applyFuncsToArray(highestNumber, name) {
   var outputArray = []
   var upToNumbersArray = makeUpToArray(highestNumber)
   upToNumbersArray.forEach(function(number){
     var checkForZeroOrOne = hasNoZerosOrOnes(number)
     if (isDivisibleByThree(number)) {
-      pushApology(outputArray, "Dave")
+      pushApology(outputArray, name)
     } else if (checkForZeroOrOne === 1) {
       pushBoop(outputArray)
     } else if (checkForZeroOrOne === 0) {
@@ -59,3 +59,15 @@ function applyFuncsToArray(highestNumber) {
   })
   return outputArray
 }
+
+$(document).ready(function(){
+  $("#submit").click(function(e) {
+    e.preventDefault()
+    $(".input").hide()
+    let name = $("#name").val()
+    let highestNumber =  parseInt($("#favorite-number").val())
+    let outputArray = applyFuncsToArray(highestNumber, name)
+    $(".results-space").after("<p>" + outputArray + "</p>")
+    $(".results").show()
+  })
+})

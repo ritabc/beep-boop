@@ -35,6 +35,7 @@
 
 * Notes:
   * challenge: work for (-) numbers too
+  * challenge: print the input number and the output "number"
 
 ## Technologies Used
 
